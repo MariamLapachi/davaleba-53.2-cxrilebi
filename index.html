@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ჩემი საიტი</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 1000px;
+            height: 1000px;
+            border: 1px solid white;
+            padding: 0px;
+            margin-left: 114px;
+            margin-top: 23px;
+        }
+
+        .boxsecond {
+            display: flex;
+        }
+
+        .boxthird {
+            display: flex;
+        }
+
+        h2 {
+            width: 152px;
+            height: 22px;
+        }
+
+        table {
+           border-collapse: collapse;
+           border: 1px solid #DADADA
+        }
+
+        td {
+           border-collapse: collapse;
+           border: 1px solid #DADADA;
+           height: 57px;
+           width: 444px;
+           text-align: center;
+        }
+
+        th:nth-child(1) {
+           border-collapse: collapse;
+           border: 1px solid #DADADA;
+           background-color:  #F9F9F9;
+           height: 57px !important;;
+           width: 72px !important;;
+           text-align: center;
+        }
+
+        th:nth-child(2) {
+           border-collapse: collapse;
+           border: 1px solid #DADADA;
+           background-color:  #F9F9F9;
+           height: 22px !important;;
+           width: 444px !important;;
+           text-align: justify;
+           padding: 20px;
+        }
+
+        th:nth-child(3) {
+           border-collapse: collapse;
+           border: 1px solid #DADADA;
+           background-color:  #F9F9F9;
+           height: 57px !important;;
+           width: 276px !important;;
+           text-align: center;
+        }
+
+        th:nth-child(4) {
+           border-collapse: collapse;
+           border: 1px solid #DADADA;
+           background-color:  #F9F9F9;
+           height: 57px !important;;
+           width: 190px !important;;
+           text-align: center;
+        }
+
+        th:nth-child(5) {
+           border-collapse: collapse;
+           border: 1px solid #DADADA;
+           background-color:  #F9F9F9;
+           height: 57px !important;;
+           width: 190px !important;;
+           text-align: center;
+        }
+
+        td:nth-child(1) {
+           border-collapse: collapse;
+           border: 1px solid #DADADA;
+           height: 57px !important;;
+           width: 72px !important;;
+           text-align: center;
+           font-weight: bold;
+        }
+
+        td:nth-child(2) {
+           border-collapse: collapse;
+           border: 1px solid #DADADA;
+           height: 57px !important;;
+           width: 72px !important;;
+           text-align: left;
+           padding: 15px;
+           font-weight: bold;
+        }
+
+        td:nth-child(3) {
+           border-collapse: collapse;
+           border: 1px solid #DADADA;
+           height: 57px !important;;
+           width: 72px !important;;
+           text-align: center;
+           font-weight: bold;
+        }
+
+        td:nth-child(4) {
+           border-collapse: collapse;
+           border: 1px solid #DADADA;
+           height: 57px !important;;
+           width: 72px !important;;
+           text-align: center;
+        }
+
+        td:nth-child(5) {
+           border-collapse: collapse;
+           border: 1px solid #DADADA;
+           height: 57px !important;;
+           width: 72px !important;;
+           text-align: center;
+        }
+
+        .edit-button1,
+        .button1 input[type="button"] {
+           background-color: #FFD43A;
+           width: 115px;
+           height: 36px;
+           border: none;
+           font-weight: bold;
+        }
+
+        .edit-button2,
+        .button2 input[type="button"] {
+           background-color: red;
+           width: 115px;
+           height: 36px;
+           border: none;
+           font-weight: bold;
+        }
+
+        .searchbutton {
+            border: none;
+            background-color: #FFD43A;
+        }
+
+        td.date-text {
+           color: red;
+        }
+
+        #searchfirst {
+           width: 201px;
+           height: 45px;
+           border-radius: 10px;
+           border: 1px solid #E0E0E0;
+           margin-right: 20px;
+        }
+
+        #searchsecond {
+           width: 593px;
+           height: 45px;
+           border-radius: 10px;
+           border: 1px solid #E0E0E0;
+           margin-right: 20px;
+        }
+        
+        #searchthird {
+           width: 201px;
+           height: 45px;
+           border-radius: 10px;
+           border: 1px solid #E0E0E0;
+           margin-right: 20px;
+        } 
+
+        #searchfourth {
+           width: 115px;
+           height: 45px;
+           border-radius: 10px;
+           border: 1px solid #E0E0E0;
+           background-color: #FFD43A;
+        }
+
+        #searchTitle {
+            border: none;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+        #searchID {
+            border: none;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+        #searchCreatedat {
+            border: none;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+        #name1 {
+            font-weight: bold;
+        }
+
+        #name2 {
+            font-weight: bold;
+            margin-left: 178px;
+        }
+
+        #name3 {
+            font-weight: bold;
+            margin-left: 478px;
+        }
+
+        #name4 {
+            font-weight: bold;
+            margin-left: 135px;
+        }
+
+   </style>  
+</head>
+<body>  
+
+    <div class="box">
+        
+        <h2>Search</h2>
+        <br>
+
+        <div> 
+            <div class="boxthird">
+                <label id="name1" for="search_id">ID</label>
+                <label id="name2" for="search_title">Title</label>
+                <label id="name3" for="search_created_at">Created at</label>
+                <label id="name4" for="search_created_at">Action</label>
+        </div>
+        <div class="boxsecond">
+        <div id="searchfirst">
+         <input type="search" id="searchID" placeholder="ID">
+        </div>
+        <div id="searchsecond">
+         <input type="search" id="searchTitle" placeholder="Title">
+        </div>
+        <div id="searchthird">
+         <input type="search" id="searchCreatedat" placeholder="Created at">
+        </div>
+        <div id="searchfourth">
+         <input class="searchbutton" type="button" value="Search" id="searchbutton" onclick="searchItems()">
+        </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <h2><b>News Table</b></h2>
+        <br>
+        <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Created at</th>
+                <th>Action</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Lorem Ipsum is simply dummy text of the printing and typesetting</td>
+            <td class="date-text"   >2021/12/01</td>
+            <td class="button1"><input type="button" value="Edit" onclick="editItem(1)"></button></td>
+            <td class="button2"><input type="button" value="Edit" onclick="editItem(1)"></button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Lorem Ipsum is simply dummy text of the printing and typesetting</td>
+            <td class="date-text">2021/12/01</td>
+            <td class="button1"><input type="button" value="Edit" onclick="editItem(1)"></button></td>
+            <td class="button2"><input type="button" value="Edit" onclick="editItem(1)"></button></td>
+        </tr> 
+        <tr>
+            <td>3</td>
+            <td>Lorem Ipsum is simply dummy text of the printing and typesetting</td>
+            <td class="date-text">2021/12/01</td>
+            <td class="button1"><input type="button" value="Edit" onclick="editItem(1)"></button></td>
+            <td class="button2"><input type="button" value="Edit" onclick="editItem(1)"></button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Lorem Ipsum is simply dummy text of the printing and typesetting</td>
+            <td class="date-text">2021/12/01</td>
+            <td class="button1"><input type="button" value="Edit" onclick="editItem(1)"></button></td>
+            <td class="button2"><input type="button" value="Edit" onclick="editItem(1)"></button></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Lorem Ipsum is simply dummy text of the printing and typesetting</td>
+            <td class="date-text">2021/12/01</td>
+            <td class="button1"><input type="button" value="Edit" onclick="editItem(1)"></button></td>
+            <td class="button2"><input type="button" value="Edit" onclick="editItem(1)"></button></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Lorem Ipsum is simply dummy text of the printing and typesetting</td>
+            <td class="date-text">2021/12/01</td>
+            <td class="button1"><input type="button" value="Edit" onclick="editItem(1)"></button></td>
+            <td class="button2"><input type="button" value="Edit" onclick="editItem(1)"></button></td>
+        </tr>
+        
+    </table>    
+    </div>
+</div>
+</body>
+</html>
